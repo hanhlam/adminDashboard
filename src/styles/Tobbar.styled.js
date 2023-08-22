@@ -20,6 +20,7 @@ const Toolbar = styled.form`
     font-size: 30px;
     cursor: pointer;
     color: blue;
+    text-decoration: none;
   }
 
   .topbarIconContainer {

@@ -3,7 +3,7 @@ import "./App.css";
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Users from "./pages/Users";
 import User from "./pages/User";
 import Products from "./pages/Products";
@@ -11,7 +11,7 @@ import BlankPage from "./components/BlankPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <Topbar />
         <div className="container">
@@ -32,7 +32,7 @@ function App() {
           </div>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

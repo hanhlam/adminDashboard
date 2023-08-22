@@ -8,7 +8,9 @@ export default function Topbar() {
     <Toolbar>
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">AdminDash</span>
+          <a className="logo" href="/">
+            <span>AdminDash</span>
+          </a>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
